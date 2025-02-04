@@ -9,5 +9,5 @@ RUN apt-get update \
     && sha256sum java.deb | grep -q "$(cat java.sum)" \
     && dpkg -i java.deb \
     && rm java.deb java.sum \
-    && apt-get purge wget \
+    && apt-get purge -y wget \
     && apt-get clean
