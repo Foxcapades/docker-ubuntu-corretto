@@ -19,6 +19,4 @@ jobs:
       with:
         push: true
         tags: foxcapades/ubuntu-corretto:${{ github.ref_name }}
-        labels: git-commit=${{ github.sha }}
-
-
+        labels: io.foxcapades.git-commit=${{ github.sha }}
